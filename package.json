@@ -1,7 +1,7 @@
 {
   "name": "webpage",
   "version": "1.0.0",
-  "description": "",
+  "description": "Rika's Webpage",
   "private": true,
   "scripts": {
     "serve-functions": "netlify-lambda serve --port 8081 functions-src",
@@ -15,7 +15,6 @@
     "type": "git",
     "url": "git+https://github.com/rikasrihasut/webpage.git"
   },
-  "keywords": [],
   "author": "Rika Srihasut",
   "license": "MIT",
   "bugs": {
