@@ -1,0 +1,1 @@
+{"id":"index.js","dependencies":[{"name":"/home/ubuntu/workspace/webpage/package.json","includedInParent":true,"mtime":1540271332433}],"generated":{"js":"(function () {\n  console.log('init newsite');\n})();","map":null},"hash":"3ec42353b6ee182a4dc59ba5964ac19d","cacheData":{"env":{}}}

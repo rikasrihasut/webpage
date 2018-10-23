@@ -1,0 +1,31 @@
+{
+  "name": "webpage",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "serve-functions": "netlify-lambda serve --port 8081 functions-src",
+    "build-functions": "netlify-lambda build functions-src",
+    "serve": "npm run serve-functions | parcel index.html --port $PORT --log-level 3",
+    "prebuild": "rm -rf dist && cp -R ./assets ./dist",
+    "build": "npm run build-functions | parcel build --no-content-hash index.html",
+    "bundle-experiment": "node bundler.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rikasrihasut/webpage.git"
+  },
+  "keywords": [],
+  "author": "Rika Srihasut",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rikasrihasut/webpage/issues"
+  },
+  "homepage": "https://github.com/rikasrihasut/webpage#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.7",
+    "netlify-lambda": "^1.0.2",
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.14.3"
+  }
+}
